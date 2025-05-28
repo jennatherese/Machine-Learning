@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Predictor</title>
+</head>
+<body>
+    <h1> Predict Final  (G3)</h1>
+    <form action="/predict" method="post">
+        G1: <input type="number" name="G1" step="any" required><br><br>
+        G2: <input type="number" name="G2" step="any" required><br><br>
+        Study Time: <input type="number" name="studytime" step="any" required><br><br>
+        Failures: <input type="number" name="failures" step="any" required><br><br>
+        Absences: <input type="number" name="absences" step="any" required><br><br>
+        Go Out: <input type="number" name="goout" step="any" required><br><br>
+        <input type="submit" value="Predict Grade">
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
